@@ -2,8 +2,9 @@ import React from 'react';
 
 export default function CourseCard({ title, description, instructor, role, rating, reviews, price, image, avatar }) {
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
-            <img src={image} alt={title} className="w-full h-40 object-cover" />
+        <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-md transition-shadow">
+            <img src={image} alt={title} className="w-full h-48 object-cover" />
+
             <div className="p-5 flex flex-col flex-grow">
                 <h3 className="font-bold text-gray-800 text-lg mb-2 leading-tight">{title}</h3>
                 <p className="text-gray-500 text-sm mb-4 line-clamp-2">{description}</p>
